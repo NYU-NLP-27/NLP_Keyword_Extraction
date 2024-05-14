@@ -1,0 +1,23 @@
+# instructions: run: pipenv install
+# then run: pipenv shell
+# finally run scripts: python3 [script]
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://test.pypi.org/simple/"
+verify_ssl = true
+name = "testpypi"
+
+[packages]
+datasets = "*"
+pandas = "*"
+nltk = "*"
+scikit-learn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
